@@ -1,0 +1,87 @@
+/* --------------- /footer ---------*/
+footer {
+  width: 100%;
+  background-color: $blackColor;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.footer-flex {
+  max-width: 1440px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.footer-map {
+  margin-top: 2rem;
+  color: $whiteColor;
+  height: 250px;
+  flex: 0 0 30%;
+}
+.footer-map > iframe {
+  padding: 1rem 0;
+}
+.footer-nav {
+  flex: 0 0 60%;
+}
+.footer-nav-first {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+.footer-nav-first > li > a {
+  color: $whiteColor;
+  text-decoration: none;
+}
+.footer-nav-first > li > a:hover {
+  color: $redColor;
+  transition: all 0.1s;
+}
+.footer-nav-second > li {
+  padding-top: 0.5rem;
+}
+.footer-nav-second > li > a {
+  color: $grayColor;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+.footer-nav-second > .nav-first {
+  padding-top: 1rem;
+}
+.footer-nav-second > .nav-first > a {
+  color: $whiteColor;
+  font-size: 1rem;
+}
+.footer-nav-second > li > a:hover {
+  color: $redColor;
+  transition: all 0.1s;
+}
+.footer-bottom {
+  max-width: 1440px;
+  width: 95%;
+  margin: 1rem auto;
+  color: $whiteColor;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid $grayColor;
+  border-bottom: 2px solid $grayColor;
+  padding: 1rem 1rem 0 1rem;
+}
+.footer-bottom > div > p {
+  padding-bottom: 1rem;
+}
+.footer-bottom > div > p > a {
+  color: $whiteColor;
+}
+.bottom {
+  max-width: 1440px;
+  width: 95%;
+  margin: 0 auto;
+  color: $grayColor;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 1rem 0;
+}
+
+/* --------------- /footer ---------*/

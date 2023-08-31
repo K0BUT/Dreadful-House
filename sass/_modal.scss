@@ -1,0 +1,113 @@
+/* --------------- /modal window ---------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 80;
+  padding-top: 300px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  position: relative;
+  background-color: $whiteColor;
+  margin: auto;
+  border-radius: 10px;
+  z-index: 85;
+  width: 20%;
+  min-width: 500px;
+  text-align: center;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  color: $blackColor;
+}
+.button-modal {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 3rem;
+}
+.modal-content > .blur {
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.modal-content p {
+  padding: 0 1rem 1rem 1rem;
+  margin: 0 auto;
+}
+.modal-content h1 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  font-weight: 900;
+}
+.modal-content input {
+  height: 2.25rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  width: 70%;
+  border-radius: 5px;
+  color: $whiteColor;
+  font-size: 1.25rem;
+}
+.modal-content .last {
+  margin-bottom: 6rem;
+}
+.modal-content input:hover,
+.modal-content input:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  color: $blackColor;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: $redColor;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}

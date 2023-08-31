@@ -1,0 +1,80 @@
+/* --------------- /обратная связь ---------*/
+.write-conteiner {
+  background-image: url(../img/write.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.blur {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  height: 100%;
+  width: 100%;
+}
+.write-flex {
+  max-width: 1440px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  padding: 4rem 0;
+  color: $whiteColor;
+  text-shadow: black 1px 0 10px;
+}
+.write-text {
+  position: relative;
+  flex: 0 0 40%;
+  color: $whiteColor;
+}
+.write-text > h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+.write-text > p {
+  width: 85%;
+}
+.button-write {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 3.5rem;
+}
+.write-flex > form {
+  flex: 0 0 60%;
+}
+.write-flex > form > p {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+.write-flex > form > input {
+  height: 2.25rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  color: $whiteColor;
+  font-size: 1.25rem;
+}
+.write-flex > form > input:hover,
+.write-flex > form > input:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.write-flex > form > textarea {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  color: $whiteColor;
+  font-size: 1.25rem;
+  resize: vertical;
+  min-height: 5rem;
+  max-height: 15rem;
+}
+.write-flex > form > textarea:hover,
+.write-flex > form > textarea:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* --------------- /обратная связь ---------*/

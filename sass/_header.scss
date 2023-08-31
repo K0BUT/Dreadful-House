@@ -1,0 +1,150 @@
+/* --------------- /header ---------*/
+.top-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: $whiteColor;
+  .logo {
+    img {
+      height: 5rem;
+    }
+  }
+
+  .button-order {
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    width: 5rem;
+  }
+}
+.phone {
+  display: flex;
+  position: absolute;
+  right: 9rem;
+  cursor: pointer;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1.9rem 0 1.9rem 200px;
+  }
+  p {
+    padding: 2rem 1rem;
+  }
+}
+.phone:hover .phone-info {
+  opacity: 1;
+  font-size: 1rem;
+  max-height: 25rem;
+}
+.phone-info {
+  position: absolute;
+  list-style: none;
+  text-align: right;
+  top: 3.7rem;
+  font-size: 1rem;
+  right: 0;
+  margin: 0;
+  padding: 0 1rem;
+  width: 350px;
+  z-index: 5;
+  background: $whiteColor;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s linear;
+  -moz-transition: max-height 0.4s linear;
+  transition: max-height 0.4s linear;
+  p {
+    padding: 0.5rem 0;
+  }
+}
+
+.slow_nav {
+  border-top: 1px solid $blackColor;
+  border-bottom: 1px solid $blackColor;
+  box-sizing: border-box;
+}
+.slow_nav > ul {
+  max-width: 1440px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 5;
+}
+
+.slow_nav > ul > li {
+  list-style: none;
+  position: relative;
+  padding: 1rem;
+  z-index: 5;
+}
+
+.slow_nav a {
+  text-decoration: none;
+  z-index: 5;
+}
+
+.slow_nav > ul > li > a {
+  font-size: 1.25rem;
+  color: $blackColor;
+  z-index: 5;
+}
+.slow_nav > ul > li > a:hover {
+  color: $redColor;
+  transition: all 0.25s;
+}
+
+.slow_nav li ul {
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  top: 3.7rem;
+  font-size: 1rem;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 5px 5px;
+  /* ДАННЫЕ СТРОКИ НУЖНЫ ДЛЯ ПРАВИЛЬНОЙ РАБОТЫ АНИМАЦИИ */
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s linear;
+  -moz-transition: max-height 0.4s linear;
+  transition: max-height 0.4s linear;
+  /* КОНЕЦ */
+}
+.slow_nav li:hover ul {
+  max-height: 600px;
+  z-index: 5;
+}
+.slow_nav li ul li {
+  background-color: $whiteColor;
+  z-index: 5;
+  text-align: left;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+.slow_nav li ul li a {
+  padding: 5px 12px;
+  color: $blackColor;
+  display: block;
+  z-index: 5;
+}
+.slow_nav li ul li a:hover {
+  color: $whiteColor;
+  transition: all 0.25s;
+}
+.slow_nav li ul li:hover {
+  background-color: #444;
+  z-index: 5;
+  transition: all 0.25s;
+}
+.burger {
+  img {
+    display: none;
+  }
+}
